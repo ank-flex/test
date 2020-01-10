@@ -1,0 +1,30 @@
+12:59:03.227 karate.env = null 
+12:59:03.229 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:03.230 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:04.059 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=33.8688&lon=151.2093&marine=null&units=null&lang=null&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:05.219 response time in milliseconds: 1157.24
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:05 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=33.8688&lon=151.2093&marine=null&units=null&lang=null&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 911
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":58,"pod":"d","lon":151.21,"pres":1010.88,"timezone":"Asia\/Tokyo","ob_time":"2020-01-10 01:52","country_code":"JP","clouds":46,"ts":1578621149,"solar_rad":688.003,"state_code":"04","city_name":"Hasaki","wind_spd":8.14954,"last_ob_time":"2020-01-10T01:18:00","wind_cdir_full":"north-northwest","wind_cdir":"NNW","slp":1010.77,"vis":24.1351,"h_angle":-18,"sunset":"07:41","dni":899.48,"dewpt":5.2,"snow":0,"uv":3.88328,"precip":0,"wind_dir":331,"sunrise":"21:49","ghi":726.9,"dhi":113.74,"aqi":27,"lat":33.87,"weather":{"icon":"c02d","code":"802","description":"Scattered clouds"},"datetime":"2020-01-10:01","temp":13.3,"station":"RJAH","elev_angle":42.01,"app_temp":13.3}],"count":1}
+
+
+12:57:00.122 assertion failed: path: $, actual: {data=[{"rh":58,"pod":"d","lon":151.21,"pres":1010.88,"timezone":"Asia\/Tokyo","ob_time":"2020-01-10 01:52","country_code":"JP","clouds":46,"ts":1578621149,"solar_rad":688.003,"state_code":"04","city_name":"Hasaki","wind_spd":8.14954,"last_ob_time":"2020-01-10T01:18:00","wind_cdir_full":"north-northwest","wind_cdir":"NNW","slp":1010.77,"vis":24.1351,"h_angle":-18,"sunset":"07:41","dni":899.48,"dewpt":5.2,"snow":0,"uv":3.88328,"precip":0,"wind_dir":331,"sunrise":"21:49","ghi":726.9,"dhi":113.74,"aqi":27,"lat":33.87,"weather":{"icon":"c02d","code":"802","description":"Scattered clouds"},"datetime":"2020-01-10:01","temp":13.3,"station":"RJAH","elev_angle":42.01,"app_temp":13.3}], count=1}, expected: {count=1, data=#notnull, data[0].pod=["d","|| 'n'"]}, reason: all key-values did not match, expected has un-matched keys: [data[0].pod]

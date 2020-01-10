@@ -1,0 +1,30 @@
+12:59:03.227 karate.env = null 
+12:59:03.229 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:03.230 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:04.059 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=988.09888&lon=2334.55567&marine=t&units=S&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:05.219 response time in milliseconds: 1159.13
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:05 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=988.09888&lon=2334.55567&marine=t&units=S&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 907
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":96,"pod":"d","lon":2334.56,"pres":1024.16,"timezone":"Asia\/Anadyr","ob_time":"2020-01-10 01:52","country_code":"RU","clouds":0,"ts":1578621149,"solar_rad":17.52,"state_code":"15","city_name":"Leningradskiy","wind_spd":2.92064,"last_ob_time":"2020-01-10T01:00:00","wind_cdir_full":"northwest","wind_cdir":"NW","slp":1024.15,"vis":24.1355,"h_angle":30,"sunset":"02:36","dni":142.65,"dewpt":244.3,"snow":0,"uv":2.23878,"precip":1,"wind_dir":324,"sunrise":"21:54","ghi":17.52,"dhi":21.09,"aqi":null,"lat":988.1,"weather":{"icon":"s01d","code":"600","description":"Light Snow"},"datetime":"2020-01-10:01","temp":247.5,"station":"UHMA","elev_angle":4.35,"app_temp":236.2}],"count":1}
+
+
+12:57:00.122 assertion failed: path: $, actual: {data=[{"rh":96,"pod":"d","lon":2334.56,"pres":1024.16,"timezone":"Asia\/Anadyr","ob_time":"2020-01-10 01:52","country_code":"RU","clouds":0,"ts":1578621149,"solar_rad":17.52,"state_code":"15","city_name":"Leningradskiy","wind_spd":2.92064,"last_ob_time":"2020-01-10T01:00:00","wind_cdir_full":"northwest","wind_cdir":"NW","slp":1024.15,"vis":24.1355,"h_angle":30,"sunset":"02:36","dni":142.65,"dewpt":244.3,"snow":0,"uv":2.23878,"precip":1,"wind_dir":324,"sunrise":"21:54","ghi":17.52,"dhi":21.09,"aqi":null,"lat":988.1,"weather":{"icon":"s01d","code":"600","description":"Light Snow"},"datetime":"2020-01-10:01","temp":247.5,"station":"UHMA","elev_angle":4.35,"app_temp":236.2}], count=1}, expected: {count=1, data=#notnull, data[0].pod=["d","|| 'n'"]}, reason: all key-values did not match, expected has un-matched keys: [data[0].pod]

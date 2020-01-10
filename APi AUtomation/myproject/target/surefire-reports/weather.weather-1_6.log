@@ -1,0 +1,30 @@
+12:59:05.248 karate.env = null 
+12:59:05.248 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:05.248 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:05.271 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=-788.99&lon=-1122.444444&marine=t&units=I&lang=ar&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:06.274 response time in milliseconds: 1002.14
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:06 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=-788.99&lon=-1122.444444&marine=t&units=I&lang=ar&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 903
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"wind_cdir":"NNW","rh":95,"pod":"d","pres":698.354,"timezone":"Pacific\/Chatham","ob_time":"2020-01-10 01:52","country_code":"NZ","clouds":100,"ts":1578621150,"solar_rad":50.66,"state_code":"10","city_name":"Waitangi","wind_spd":11.8,"last_ob_time":"2020-01-10T01:00:00","wind_cdir_full":"North-North-West","slp":1007.83,"vis":0.6,"lon":-1122.44,"uv":1.14506,"datetime":"2020-01-10:01","h_angle":12.9,"dewpt":-15.9,"aqi":null,"dhi":98.29,"wind_dir":351,"elev_angle":31.72,"ghi":506.6,"precip":null,"sunrise":"17:07","lat":-788.99,"weather":{"icon":"c02d","code":"801","description":"عدد قليل من السحب"},"sunset":"06:28","temp":-10.3,"dni":813.89,"station":"NFTF","app_temp":-29.7}],"count":1}
+
+
+12:57:01.165 assertion failed: path: $, actual: {data=[{"wind_cdir":"NNW","rh":95,"pod":"d","pres":698.354,"timezone":"Pacific\/Chatham","ob_time":"2020-01-10 01:52","country_code":"NZ","clouds":100,"ts":1578621150,"solar_rad":50.66,"state_code":"10","city_name":"Waitangi","wind_spd":11.8,"last_ob_time":"2020-01-10T01:00:00","wind_cdir_full":"North-North-West","slp":1007.83,"vis":0.6,"lon":-1122.44,"uv":1.14506,"datetime":"2020-01-10:01","h_angle":12.9,"dewpt":-15.9,"aqi":null,"dhi":98.29,"wind_dir":351,"elev_angle":31.72,"ghi":506.6,"precip":null,"sunrise":"17:07","lat":-788.99,"weather":{"icon":"c02d","code":"801","description":"عدد قليل من السحب"},"sunset":"06:28","temp":-10.3,"dni":813.89,"station":"NFTF","app_temp":-29.7}], count=1}, expected: {count=1, data=#notnull, data[0].pod=["d","|| 'n'"]}, reason: all key-values did not match, expected has un-matched keys: [data[0].pod]

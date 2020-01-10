@@ -1,0 +1,31 @@
+12:59:05.248 karate.env = null 
+12:59:05.249 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:05.251 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:05.269 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=100.11&lon=-0.899&marine=&units=M&lang=de&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:06.269 response time in milliseconds: 999.26
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:06 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=100.11&lon=-0.899&marine=&units=M&lang=de&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 905
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"wind_cdir":"NW","rh":96,"pod":"n","pres":1024.16,"timezone":"America\/Godthab","ob_time":"2020-01-10 01:52","country_code":"SJ","clouds":0,"ts":1578621150,"solar_rad":0,"state_code":"21","city_name":"Ny-Ålesund","wind_spd":2.92207,"last_ob_time":"2020-01-10T01:32:00","wind_cdir_full":"Nordwestlich","slp":1024.15,"vis":24.1355,"lon":-0.9,"uv":0,"datetime":"2020-01-10:01","h_angle":null,"dewpt":-28.8,"aqi":null,"dhi":0,"wind_dir":324,"elev_angle":-31.41,"ghi":0,"precip":null,"sunrise":"00:00","lat":100.11,"weather":{"icon":"c01n","code":"800","description":"Klarer Himmel"},"sunset":"99:99","temp":-25.6,"dni":0,"station":"F0582","app_temp":-37}],"count":1}
+
+
+
+12:57:01.163 assertion failed: path: $, actual: {data=[{"wind_cdir":"NW","rh":96,"pod":"n","pres":1024.16,"timezone":"America\/Godthab","ob_time":"2020-01-10 01:52","country_code":"SJ","clouds":0,"ts":1578621150,"solar_rad":0,"state_code":"21","city_name":"Ny-Ålesund","wind_spd":2.92207,"last_ob_time":"2020-01-10T01:32:00","wind_cdir_full":"Nordwestlich","slp":1024.15,"vis":24.1355,"lon":-0.9,"uv":0,"datetime":"2020-01-10:01","h_angle":null,"dewpt":-28.8,"aqi":null,"dhi":0,"wind_dir":324,"elev_angle":-31.41,"ghi":0,"precip":null,"sunrise":"00:00","lat":100.11,"weather":{"icon":"c01n","code":"800","description":"Klarer Himmel"},"sunset":"99:99","temp":-25.6,"dni":0,"station":"F0582","app_temp":-37}], count=1}, expected: {count=1, data=#notnull, data[0].pod=["d","|| 'n'"]}, reason: all key-values did not match, expected has un-matched keys: [data[0].pod]

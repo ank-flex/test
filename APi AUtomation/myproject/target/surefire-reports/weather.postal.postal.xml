@@ -1,0 +1,442 @@
+<testsuite failures="1" name="weather/postal/postal.feature" skipped="0" tests="10" time="15.162393">
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Both post code and country provided" time="2.004632">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - All query params provided" time="2.004703">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Alphanumeric postcode" time="2.004788">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Postcode containing letters &amp; symbol" time="2.004031">
+    <failure message="postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)">* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped</failure>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Longest digit postcode" time="2.004564">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'15119-43943', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Optional marine param provided" time="1.030571">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'15119-43943', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'7600', country:'', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Optional marine,units(M) param provided" time="1.022282">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'15119-43943', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'7600', country:'', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'60641', country:'', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Optional marine,units(s)" time="1.028838">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'15119-43943', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'7600', country:'', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'60641', country:'', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'D02 A272', country:'', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Optional units(I)" time="1.026048">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'15119-43943', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'7600', country:'', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'60641', country:'', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'D02 A272', country:'', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'110001', country:'', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.postal.postal" name="Find weather data based on provided values - Optional units(M), language(zh-tw)" time="1.031937">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {postal_code:'2000', country:'AU', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'8000', country:'CH', marine: 't', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'P5N 2J4', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'AI-2640', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 200 (postal.feature:11)&#13;
+
+And match response == {count: 1, data: '#notnull'} ........................ skipped
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'15119-43943', country:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'7600', country:'', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'60641', country:'', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'D02 A272', country:'', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'110001', country:'', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {postal_code:'989900', country:'', marine: '', units:'M', lang: 'zh-tw',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+</testsuite>

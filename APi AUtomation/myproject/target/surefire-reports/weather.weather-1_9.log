@@ -1,0 +1,29 @@
+12:59:05.248 karate.env = null 
+12:59:05.248 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:05.249 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:05.271 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=&lon=longtitude&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:06.274 response time in milliseconds: 1002.12
+1 < 400
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Length: 42
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:06 GMT
+1 < Server: openresty/1.11.2.2
+1 < X-Proxy-Cache: MISS
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 904
+1 < X-RateLimit-Reset: 1578700481
+{"error": "Invalid Parameters supplied."}
+
+
+12:59:06.276 abort at feature: classpath:weather/weather.feature, scenario: Find weather data based on provided values, line: 14

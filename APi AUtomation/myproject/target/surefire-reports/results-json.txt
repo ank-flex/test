@@ -1,0 +1,1 @@
+{"features":1,"ignored":0,"efficiency":0.6851510438319024,"failures":{"weather.postal.postal":"[1.4:19] postal.feature:11 - path: $, actual: 204, expected: 200, reason: not equal (Integer)"},"totalTime":15162.3926,"threads":5,"scenarios":10,"failed":1,"passed":9,"version":"0.9.5.RC5","elapsedTime":4426.0}

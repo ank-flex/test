@@ -1,0 +1,92 @@
+16:21:12.425 karate.env = null 
+16:21:12.428 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+16:21:12.430 config.apiKey = f767c102bb874909878729858a9ca968 
+16:21:13.308 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=2000&country=AU&marine=null&units=null&lang=null&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+16:21:14.491 response time in milliseconds: 1180.19
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 05:21:14 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=2000&country=AU&marine=null&units=null&lang=null&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 713
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":76,"pod":"d","lon":151.2077,"pres":990.9,"timezone":"Australia\/Sydney","ob_time":"2020-01-10 04:50","country_code":"AU","clouds":67,"ts":1578631800,"solar_rad":647,"state_code":"02","city_name":"Milsons Point","wind_spd":1.34,"last_ob_time":"2020-01-10T04:50:00","wind_cdir_full":"west","wind_cdir":"W","slp":998.9,"vis":5,"h_angle":33.8,"sunset":"09:10","dni":925.67,"dewpt":21,"snow":0,"uv":8.37129,"precip":0,"wind_dir":281,"sunrise":"18:54","ghi":813.89,"dhi":118.94,"aqi":48,"lat":-33.8561,"weather":{"icon":"c02d","code":"802","description":"Scattered clouds"},"datetime":"2020-01-10:05","temp":25.6,"station":"D5330","elev_angle":49.37,"app_temp":26.2}],"count":1}
+
+
+16:21:14.506 karate.env = null 
+16:21:14.507 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+16:21:14.507 config.apiKey = f767c102bb874909878729858a9ca968 
+16:21:14.536 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=7600&country=&marine=t&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+16:21:15.538 response time in milliseconds: 1001.85
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 05:21:15 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=7600&country=&marine=t&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 709
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":61,"pod":"n","lon":-57.55,"pres":1010.1,"timezone":"America\/Argentina\/Buenos_Aires","ob_time":"2020-01-10 04:44","country_code":"AR","clouds":0,"ts":1578631440,"solar_rad":0,"state_code":"01","city_name":"Mar del Plata","wind_spd":0.45,"last_ob_time":"2020-01-10T04:44:00","wind_cdir_full":"north","wind_cdir":"N","slp":1011.3,"vis":5,"h_angle":-90,"sunset":"23:08","dni":0,"dewpt":12.3,"snow":0,"uv":0,"precip":0,"wind_dir":0,"sunrise":"08:39","ghi":0,"dhi":0,"aqi":9,"lat":-38,"weather":{"icon":"c01n","code":"800","description":"Clear sky"},"datetime":"2020-01-10:05","temp":20,"station":"F5436","elev_angle":-28.26,"app_temp":19.7}],"count":1}
+
+
+rol-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 03:48:38 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+{"error":"API key not valid, or not yet activated."}
+
+
+< X-RateLimit-Remaining: 765
+1 < X-RateLimit-Reset: 1578700481
+{"error": "Invalid Parameters supplied."}
+
+
+0)
+
+14:45:36.074 response time in milliseconds: 1008.90
+1 < 400
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Length: 42
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 03:45:36 GMT
+1 < Server: openresty/1.11.2.2
+1 < X-Proxy-Cache: MISS
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 782
+1 < X-RateLimit-Reset: 1578700481
+{"error": "Invalid Parameters supplied."}
+
+
+
+
+
+14:27:07.323 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)

@@ -1,0 +1,4553 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: weather/weather.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>test</td>
+            <td>10 Jan 2020, 16:21</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">weather/weather.feature</td>
+                    <td      class="passed"    >95</td>
+          <td      class="failed"    >3</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">98</td>
+
+          <td  class="passed"    >12</td>
+          <td  class="failed"    >3</td>
+          <td class="total">15</td>
+
+          <td class="duration" data-value="23246162600">23.246</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">weather/weather.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Check current weather forecast based on latitude and longtitude and other optional parameters</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.163</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">1.163</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>14:36:37.334 karate.env = null 
+14:36:37.337 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:37.340 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.446</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - only lat &amp; long is provided</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.432</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>14:36:38.775 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=33.8688&amp;lon=151.2093&amp;marine=null&amp;units=null&amp;lang=null&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:40.053 response time in milliseconds: 1273.54
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:39 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=33.8688&amp;lon=151.2093&amp;marine=null&amp;units=null&amp;lang=null&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 817
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;rh&quot;:59,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:151.21,&quot;pres&quot;:1010.1,&quot;timezone&quot;:&quot;Asia\/Tokyo&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;JP&quot;,&quot;clouds&quot;:61,&quot;ts&quot;:1578626825,&quot;solar_rad&quot;:488.532,&quot;state_code&quot;:&quot;04&quot;,&quot;city_name&quot;:&quot;Hasaki&quot;,&quot;wind_spd&quot;:7.12705,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;north-northwest&quot;,&quot;wind_cdir&quot;:&quot;NNW&quot;,&quot;slp&quot;:1010.13,&quot;vis&quot;:24.1348,&quot;h_angle&quot;:18,&quot;sunset&quot;:&quot;07:42&quot;,&quot;dni&quot;:841.22,&quot;dewpt&quot;:5.1,&quot;snow&quot;:0,&quot;uv&quot;:2.39194,&quot;precip&quot;:0,&quot;wind_dir&quot;:336,&quot;sunrise&quot;:&quot;21:48&quot;,&quot;ghi&quot;:567.86,&quot;dhi&quot;:102.99,&quot;aqi&quot;:28,&quot;lat&quot;:33.87,&quot;weather&quot;:{&quot;icon&quot;:&quot;c02d&quot;,&quot;code&quot;:&quot;802&quot;,&quot;description&quot;:&quot;Scattered clouds&quot;},&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;temp&quot;:12.8,&quot;station&quot;:&quot;RJAA&quot;,&quot;elev_angle&quot;:40.74,&quot;app_temp&quot;:12.8}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.163</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">1.163</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>14:36:37.334 karate.env = null 
+14:36:37.337 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:37.339 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.446</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - -ve lat &amp; long provided(automatic round-off)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.432</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>14:36:38.775 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=-.099&amp;lon=-.2093&amp;marine=null&amp;units=null&amp;lang=null&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:40.054 response time in milliseconds: 1273.62
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:39 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=-.099&amp;lon=-.2093&amp;marine=null&amp;units=null&amp;lang=null&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 819
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;rh&quot;:72,&quot;pod&quot;:&quot;n&quot;,&quot;lon&quot;:-0.21,&quot;pres&quot;:1011.43,&quot;timezone&quot;:&quot;Africa\/Accra&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:31&quot;,&quot;country_code&quot;:&quot;GH&quot;,&quot;clouds&quot;:85,&quot;ts&quot;:1578627060,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;09&quot;,&quot;city_name&quot;:&quot;Takoradi&quot;,&quot;wind_spd&quot;:3.55819,&quot;last_ob_time&quot;:&quot;2020-01-10T03:09:00&quot;,&quot;wind_cdir_full&quot;:&quot;south&quot;,&quot;wind_cdir&quot;:&quot;S&quot;,&quot;slp&quot;:1011.48,&quot;vis&quot;:24.1348,&quot;h_angle&quot;:-90,&quot;sunset&quot;:&quot;18:09&quot;,&quot;dni&quot;:0,&quot;dewpt&quot;:22.8,&quot;snow&quot;:0,&quot;uv&quot;:0,&quot;precip&quot;:0,&quot;wind_dir&quot;:183,&quot;sunrise&quot;:&quot;06:04&quot;,&quot;ghi&quot;:0,&quot;dhi&quot;:0,&quot;aqi&quot;:93,&quot;lat&quot;:-0.1,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04n&quot;,&quot;code&quot;:804,&quot;description&quot;:&quot;Overcast clouds&quot;},&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;temp&quot;:28.2,&quot;station&quot;:&quot;D7059&quot;,&quot;elev_angle&quot;:-42.5,&quot;app_temp&quot;:31.4}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.163</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">1.163</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>14:36:37.335 karate.env = null 
+14:36:37.339 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:37.339 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.446</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - Optional marine param provided</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.432</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>14:36:38.775 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=40.9006&amp;lon=174.8860&amp;marine=t&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:40.053 response time in milliseconds: 1273.63
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:39 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=40.9006&amp;lon=174.8860&amp;marine=t&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 820
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;rh&quot;:76,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:174.89,&quot;pres&quot;:998.743,&quot;timezone&quot;:&quot;America\/Adak&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;US&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1578626825,&quot;solar_rad&quot;:39.4575,&quot;state_code&quot;:&quot;AK&quot;,&quot;city_name&quot;:&quot;Attu Station&quot;,&quot;wind_spd&quot;:14.1557,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;west&quot;,&quot;wind_cdir&quot;:&quot;W&quot;,&quot;slp&quot;:998.64,&quot;vis&quot;:4.08755,&quot;h_angle&quot;:45,&quot;sunset&quot;:&quot;05:30&quot;,&quot;dni&quot;:533.53,&quot;dewpt&quot;:3.7,&quot;snow&quot;:0,&quot;uv&quot;:0.657525,&quot;precip&quot;:0,&quot;wind_dir&quot;:269,&quot;sunrise&quot;:&quot;21:36&quot;,&quot;ghi&quot;:157.83,&quot;dhi&quot;:59.51,&quot;aqi&quot;:25,&quot;lat&quot;:40.9,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04d&quot;,&quot;code&quot;:&quot;804&quot;,&quot;description&quot;:&quot;Overcast clouds&quot;},&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;temp&quot;:7.6,&quot;station&quot;:&quot;UHPP&quot;,&quot;elev_angle&quot;:17.33,&quot;app_temp&quot;:7.6}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.163</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">1.163</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>14:36:37.335 karate.env = null 
+14:36:37.339 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:37.340 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.446</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - Optional marine,units(M) param provided</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-22" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.432</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>14:36:38.775 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=855&amp;lon=-123&amp;marine=t&amp;units=M&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:40.053 response time in milliseconds: 1273.58
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:39 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=855&amp;lon=-123&amp;marine=t&amp;units=M&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 818
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;wind_cdir&quot;:&quot;SSW&quot;,&quot;rh&quot;:93,&quot;pod&quot;:&quot;n&quot;,&quot;pres&quot;:1023.37,&quot;timezone&quot;:&quot;America\/Iqaluit&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;GL&quot;,&quot;clouds&quot;:14,&quot;ts&quot;:1578626825,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;05&quot;,&quot;city_name&quot;:&quot;Siorapaluk&quot;,&quot;wind_spd&quot;:3.25296,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;south-southwest&quot;,&quot;slp&quot;:1023.29,&quot;vis&quot;:24.1344,&quot;lon&quot;:-123,&quot;uv&quot;:0,&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;h_angle&quot;:null,&quot;dewpt&quot;:-28.9,&quot;aqi&quot;:null,&quot;dhi&quot;:0,&quot;wind_dir&quot;:198,&quot;elev_angle&quot;:-24.27,&quot;ghi&quot;:0,&quot;precip&quot;:null,&quot;sunrise&quot;:&quot;00:00&quot;,&quot;lat&quot;:855,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:&quot;800&quot;,&quot;description&quot;:&quot;Clear sky&quot;},&quot;sunset&quot;:&quot;99:99&quot;,&quot;temp&quot;:-25.4,&quot;dni&quot;:0,&quot;station&quot;:&quot;CZLT&quot;,&quot;app_temp&quot;:-36.7}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.163</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">1.163</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>14:36:37.334 karate.env = null 
+14:36:37.338 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:37.340 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.446</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - Optional marine,units(s)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.008</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.432</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>14:36:38.775 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=988.09888&amp;lon=2334.55567&amp;marine=t&amp;units=S&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:40.053 response time in milliseconds: 1273.69
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:39 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=988.09888&amp;lon=2334.55567&amp;marine=t&amp;units=S&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 821
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;wind_cdir&quot;:&quot;NW&quot;,&quot;rh&quot;:93,&quot;pod&quot;:&quot;n&quot;,&quot;pres&quot;:1023.37,&quot;timezone&quot;:&quot;Asia\/Anadyr&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:14,&quot;ts&quot;:1578626825,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;15&quot;,&quot;city_name&quot;:&quot;Leningradskiy&quot;,&quot;wind_spd&quot;:3.25333,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;northwest&quot;,&quot;slp&quot;:1023.29,&quot;vis&quot;:24.1344,&quot;lon&quot;:2334.56,&quot;uv&quot;:0,&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;h_angle&quot;:0,&quot;dewpt&quot;:244.2,&quot;aqi&quot;:null,&quot;dhi&quot;:0,&quot;wind_dir&quot;:321,&quot;elev_angle&quot;:-1.4,&quot;ghi&quot;:0,&quot;precip&quot;:null,&quot;sunrise&quot;:&quot;22:22&quot;,&quot;lat&quot;:988.1,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:&quot;800&quot;,&quot;description&quot;:&quot;Clear sky&quot;},&quot;sunset&quot;:&quot;07:55&quot;,&quot;temp&quot;:247.7,&quot;dni&quot;:0,&quot;station&quot;:&quot;E1141&quot;,&quot;app_temp&quot;:236.4}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.014</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.014</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>14:36:40.070 karate.env = null 
+14:36:40.071 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:40.071 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.023</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - Optional units(I)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.020</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>14:36:40.091 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=675.511&amp;lon=1234.55&amp;marine=&amp;units=I&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:41.108 response time in milliseconds: 1016.92
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:41 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=675.511&amp;lon=1234.55&amp;marine=&amp;units=I&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 815
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;wind_cdir&quot;:&quot;NW&quot;,&quot;rh&quot;:93,&quot;pod&quot;:&quot;n&quot;,&quot;pres&quot;:1023.37,&quot;timezone&quot;:&quot;Asia\/Anadyr&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:14,&quot;ts&quot;:1578626825,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;15&quot;,&quot;city_name&quot;:&quot;Leningradskiy&quot;,&quot;wind_spd&quot;:7.3,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;northwest&quot;,&quot;slp&quot;:1023.29,&quot;vis&quot;:15,&quot;lon&quot;:1234.55,&quot;uv&quot;:0,&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;h_angle&quot;:0,&quot;dewpt&quot;:-20.1,&quot;aqi&quot;:null,&quot;dhi&quot;:0,&quot;wind_dir&quot;:321,&quot;elev_angle&quot;:-6.01,&quot;ghi&quot;:0,&quot;precip&quot;:null,&quot;sunrise&quot;:&quot;22:22&quot;,&quot;lat&quot;:675.51,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:&quot;800&quot;,&quot;description&quot;:&quot;Clear sky&quot;},&quot;sunset&quot;:&quot;07:55&quot;,&quot;temp&quot;:-13.8,&quot;dni&quot;:0,&quot;station&quot;:&quot;E1141&quot;,&quot;app_temp&quot;:-34.1}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.010</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>14:36:40.069 karate.env = null 
+14:36:40.070 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:40.070 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.005</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - Optional marine,units(I), language</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-40" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.003</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-42">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-42" class="collapse collapsable-details">
+        <pre>14:36:40.086 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=-788.99&amp;lon=-1122.444444&amp;marine=t&amp;units=I&amp;lang=ar&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:41.086 response time in milliseconds: 999.79
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:41 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=-788.99&amp;lon=-1122.444444&amp;marine=t&amp;units=I&amp;lang=ar&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 816
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;wind_cdir&quot;:&quot;NNW&quot;,&quot;rh&quot;:95,&quot;pod&quot;:&quot;d&quot;,&quot;pres&quot;:697.975,&quot;timezone&quot;:&quot;Pacific\/Chatham&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;NZ&quot;,&quot;clouds&quot;:100,&quot;ts&quot;:1578626826,&quot;solar_rad&quot;:43.672,&quot;state_code&quot;:&quot;10&quot;,&quot;city_name&quot;:&quot;Waitangi&quot;,&quot;wind_spd&quot;:12.5,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;North-North-West&quot;,&quot;slp&quot;:1007.27,&quot;vis&quot;:0.6,&quot;lon&quot;:-1122.44,&quot;uv&quot;:1.00763,&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;h_angle&quot;:38.6,&quot;dewpt&quot;:-15.4,&quot;aqi&quot;:null,&quot;dhi&quot;:92.44,&quot;wind_dir&quot;:353,&quot;elev_angle&quot;:28.97,&quot;ghi&quot;:436.72,&quot;precip&quot;:null,&quot;sunrise&quot;:&quot;17:07&quot;,&quot;lat&quot;:-788.99,&quot;weather&quot;:{&quot;icon&quot;:&quot;c02d&quot;,&quot;code&quot;:&quot;801&quot;,&quot;description&quot;:&quot;&#1593;&#1583;&#1583; &#1602;&#1604;&#1610;&#1604; &#1605;&#1606; &#1575;&#1604;&#1587;&#1581;&#1576;&quot;},&quot;sunset&quot;:&quot;06:28&quot;,&quot;temp&quot;:-9.8,&quot;dni&quot;:778.09,&quot;station&quot;:&quot;NFTF&quot;,&quot;app_temp&quot;:-29.2}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.016</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-43" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-44" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.016</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-45">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-45" class="collapse collapsable-details">
+        <pre>14:36:40.080 karate.env = null 
+14:36:40.080 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:40.081 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.011</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Find weather data based on provided values - Optional units(M), language(de)</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-46" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>14:36:40.108 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=100.11&amp;lon=-0.899&amp;marine=&amp;units=M&amp;lang=de&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:41.113 response time in milliseconds: 1003.79
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:41 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=100.11&amp;lon=-0.899&amp;marine=&amp;units=M&amp;lang=de&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 812
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;wind_cdir&quot;:&quot;NW&quot;,&quot;rh&quot;:93,&quot;pod&quot;:&quot;n&quot;,&quot;pres&quot;:1023.37,&quot;timezone&quot;:&quot;America\/Godthab&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:27&quot;,&quot;country_code&quot;:&quot;SJ&quot;,&quot;clouds&quot;:14,&quot;ts&quot;:1578626826,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;21&quot;,&quot;city_name&quot;:&quot;Ny-&Aring;lesund&quot;,&quot;wind_spd&quot;:3.24943,&quot;last_ob_time&quot;:&quot;2020-01-10T03:07:00&quot;,&quot;wind_cdir_full&quot;:&quot;Nordwestlich&quot;,&quot;slp&quot;:1023.29,&quot;vis&quot;:24.1344,&quot;lon&quot;:-0.9,&quot;uv&quot;:0,&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;h_angle&quot;:null,&quot;dewpt&quot;:-28.9,&quot;aqi&quot;:null,&quot;dhi&quot;:0,&quot;wind_dir&quot;:320,&quot;elev_angle&quot;:-30.1,&quot;ghi&quot;:0,&quot;precip&quot;:null,&quot;sunrise&quot;:&quot;00:00&quot;,&quot;lat&quot;:100.11,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:&quot;800&quot;,&quot;description&quot;:&quot;Klarer Himmel&quot;},&quot;sunset&quot;:&quot;99:99&quot;,&quot;temp&quot;:-25.4,&quot;dni&quot;:0,&quot;station&quot;:&quot;F0582&quot;,&quot;app_temp&quot;:-36.7}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 200</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == {count: 1, data: '#notnull'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.017</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-49">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-49" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-50">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-50" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.017</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-51">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-51" class="collapse collapsable-details">
+        <pre>14:36:40.079 karate.env = null 
+14:36:40.080 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:40.080 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.011</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-52">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - incorrect lat &amp; long</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-52" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-53">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-53" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-54">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-54" class="collapse collapsable-details">
+        <pre>14:36:40.108 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=latitude&amp;lon=longtitude&amp;marine=&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:41.111 response time in milliseconds: 1002.52
+1 &lt; 400
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Length: 39
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:41 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 813
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;error&quot;: &quot;Invalid lat/lon supplied.&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.011</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-55">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-55" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-56">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-56" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.011</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-57">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-57" class="collapse collapsable-details">
+        <pre>14:36:40.087 karate.env = null 
+14:36:40.088 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:40.088 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.010</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-58">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - Lat not provided</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-58" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-59" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.007</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-60">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-60" class="collapse collapsable-details">
+        <pre>14:36:40.105 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=&amp;lon=144.88888&amp;marine=&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:41.108 response time in milliseconds: 1003.33
+1 &lt; 400
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Length: 42
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:41 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 814
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;error&quot;: &quot;Invalid Parameters supplied.&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.005</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-61" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-62">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-62" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.005</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-63">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-63" class="collapse collapsable-details">
+        <pre>14:36:41.094 karate.env = null 
+14:36:41.095 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:41.095 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.003</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-64">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - long not provided</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-64" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-65">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-65" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'455', lon:'', marine: '', units:'', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-66">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-66" class="collapse collapsable-details">
+        <pre>14:36:41.103 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=455&amp;lon=&amp;marine=&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:42.104 response time in milliseconds: 999.97
+1 &lt; 400
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Length: 42
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:42 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; X-Proxy-Cache: MISS
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 811
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;error&quot;: &quot;Invalid Parameters supplied.&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.009</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-67" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-68">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-68" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-69">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-69" class="collapse collapsable-details">
+        <pre>14:36:41.118 karate.env = null 
+14:36:41.119 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:41.120 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.003</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-70">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - Incorrect marine value</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-70" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-71">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-71" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'122.899', lon:'123.555', marine: 'ys', units:'', lang: '',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-72">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-72" class="collapse collapsable-details">
+        <pre>14:36:41.134 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=122.899&amp;lon=123.555&amp;marine=ys&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:42.133 response time in milliseconds: 997.67
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:42 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=122.899&amp;lon=123.555&amp;marine=ys&amp;units=&amp;lang=&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 808
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;rh&quot;:93,&quot;pod&quot;:&quot;n&quot;,&quot;lon&quot;:123.56,&quot;pres&quot;:1023.37,&quot;timezone&quot;:&quot;Asia\/Krasnoyarsk&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:26&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:14,&quot;ts&quot;:1578626767,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;63&quot;,&quot;city_name&quot;:&quot;Tiksi&quot;,&quot;wind_spd&quot;:3.25229,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;east&quot;,&quot;wind_cdir&quot;:&quot;E&quot;,&quot;slp&quot;:1023.29,&quot;vis&quot;:24.1344,&quot;h_angle&quot;:0,&quot;sunset&quot;:&quot;06:21&quot;,&quot;dni&quot;:0,&quot;dewpt&quot;:-28.9,&quot;snow&quot;:0,&quot;uv&quot;:0,&quot;precip&quot;:0.5,&quot;wind_dir&quot;:84,&quot;sunrise&quot;:&quot;00:33&quot;,&quot;ghi&quot;:0,&quot;dhi&quot;:0,&quot;aqi&quot;:null,&quot;lat&quot;:122.9,&quot;weather&quot;:{&quot;icon&quot;:&quot;s01n&quot;,&quot;code&quot;:&quot;600&quot;,&quot;description&quot;:&quot;Light Snow&quot;},&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;temp&quot;:-25.4,&quot;station&quot;:&quot;UEEE&quot;,&quot;elev_angle&quot;:-17.22,&quot;app_temp&quot;:-36.7}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-73">
+          <a>com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-73" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-74">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-74" class="collapse collapsable-details">
+        <pre>14:36:42.134 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.009</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-75">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-75" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-76">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-76" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.009</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-77">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-77" class="collapse collapsable-details">
+        <pre>14:36:41.120 karate.env = null 
+14:36:41.121 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:41.122 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.000</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-78">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - Incorrect units value</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-78" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-79">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-79" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'55.66', lon:'99.00', marine: '', units:'q', lang: 'test',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">0.998</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-80">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-80" class="collapse collapsable-details">
+        <pre>14:36:41.135 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=55.66&amp;lon=99.00&amp;marine=&amp;units=q&amp;lang=test&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:42.131 response time in milliseconds: 995.49
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:42 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=55.66&amp;lon=99.00&amp;marine=&amp;units=q&amp;lang=test&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 810
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;rh&quot;:95,&quot;pod&quot;:&quot;d&quot;,&quot;lon&quot;:99,&quot;pres&quot;:984.519,&quot;timezone&quot;:&quot;Asia\/Irkutsk&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:26&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:83,&quot;ts&quot;:1578626767,&quot;solar_rad&quot;:64.6567,&quot;state_code&quot;:&quot;20&quot;,&quot;city_name&quot;:&quot;Alzamay&quot;,&quot;wind_spd&quot;:0.705242,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;west&quot;,&quot;wind_cdir&quot;:&quot;W&quot;,&quot;slp&quot;:1035.51,&quot;vis&quot;:17.0124,&quot;h_angle&quot;:-67.5,&quot;sunset&quot;:&quot;09:37&quot;,&quot;dni&quot;:481.03,&quot;dewpt&quot;:-15.3,&quot;snow&quot;:0,&quot;uv&quot;:0.884153,&quot;precip&quot;:0,&quot;wind_dir&quot;:275,&quot;sunrise&quot;:&quot;02:16&quot;,&quot;ghi&quot;:123.78,&quot;dhi&quot;:53.03,&quot;aqi&quot;:6,&quot;lat&quot;:55.66,&quot;weather&quot;:{&quot;icon&quot;:&quot;c04d&quot;,&quot;code&quot;:&quot;804&quot;,&quot;description&quot;:&quot;Overcast clouds&quot;},&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;temp&quot;:-13.7,&quot;station&quot;:&quot;UNKL&quot;,&quot;elev_angle&quot;:5.62,&quot;app_temp&quot;:-22}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-81">
+          <a>com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-81" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-82">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-82" class="collapse collapsable-details">
+        <pre>14:36:42.132 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.010</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-83">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-83" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-84">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-84" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-85">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-85" class="collapse collapsable-details">
+        <pre>14:36:41.119 karate.env = null 
+14:36:41.119 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:41.120 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.003</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-86">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - incorrect marine,units, language</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-86" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-87">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-87" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'562.36969', lon:'789.3695', marine: 'test', units:'a', lang: 'oi',key: '#(apiKey)'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.001</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-88">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-88" class="collapse collapsable-details">
+        <pre>14:36:41.134 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=562.36969&amp;lon=789.3695&amp;marine=test&amp;units=a&amp;lang=oi&amp;key=f767c102bb874909878729858a9ca968
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:42.133 response time in milliseconds: 998.49
+1 &lt; 200
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:42 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Cache-Key: api.weatherbit.io/v2.0/current?lat=562.36969&amp;lon=789.3695&amp;marine=test&amp;units=a&amp;lang=oi&amp;key=f767c102bb874909878729858a9ca968
+1 &lt; X-Proxy-Cache: HIT
+1 &lt; X-RateLimit-Limit: 1000
+1 &lt; X-RateLimit-Remaining: 809
+1 &lt; X-RateLimit-Reset: 1578700481
+{&quot;data&quot;:[{&quot;wind_cdir&quot;:&quot;NW&quot;,&quot;rh&quot;:93,&quot;pod&quot;:&quot;n&quot;,&quot;pres&quot;:1023.37,&quot;timezone&quot;:&quot;Asia\/Anadyr&quot;,&quot;ob_time&quot;:&quot;2020-01-10 03:26&quot;,&quot;country_code&quot;:&quot;RU&quot;,&quot;clouds&quot;:14,&quot;ts&quot;:1578626767,&quot;solar_rad&quot;:0,&quot;state_code&quot;:&quot;15&quot;,&quot;city_name&quot;:&quot;Leningradskiy&quot;,&quot;wind_spd&quot;:3.25333,&quot;last_ob_time&quot;:&quot;2020-01-10T03:00:00&quot;,&quot;wind_cdir_full&quot;:&quot;northwest&quot;,&quot;slp&quot;:1023.29,&quot;vis&quot;:24.1344,&quot;lon&quot;:789.37,&quot;uv&quot;:0,&quot;datetime&quot;:&quot;2020-01-10:03&quot;,&quot;h_angle&quot;:0,&quot;dewpt&quot;:-28.9,&quot;aqi&quot;:null,&quot;dhi&quot;:0,&quot;wind_dir&quot;:321,&quot;elev_angle&quot;:-6.01,&quot;ghi&quot;:0,&quot;precip&quot;:null,&quot;sunrise&quot;:&quot;22:22&quot;,&quot;lat&quot;:562.37,&quot;weather&quot;:{&quot;icon&quot;:&quot;c01n&quot;,&quot;code&quot;:&quot;800&quot;,&quot;description&quot;:&quot;Clear sky&quot;},&quot;sunset&quot;:&quot;07:55&quot;,&quot;temp&quot;:-25.4,&quot;dni&quot;:0,&quot;station&quot;:&quot;E1141&quot;,&quot;app_temp&quot;:-36.7}],&quot;count&quot;:1}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 400</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-89">
+          <a>com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</a>
+      </div>
+      <div id="msg-89" class="collapse collapsable-details  in ">
+        <pre>com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-90">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-90" class="collapse collapsable-details">
+        <pre>14:36:42.134 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">0.010</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-91">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-91" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-92">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-92" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure ssl = true</span>
+  
+  <span class="lead-duration duration">0.010</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-93">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-93" class="collapse collapsable-details">
+        <pre>14:36:41.125 karate.env = null 
+14:36:41.125 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:36:41.126 config.apiKey = f767c102bb874909878729858a9ca968</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1.003</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-94">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">API should return 400/403 based on incorrect values - incorrect api key</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-94" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-95">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-95" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def query = {lat:'-788.99', lon:'-1122.44444', marine: '', units:'', lang: '',key: 'randomkey'}</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">params query</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1.000</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-96">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-96" class="collapse collapsable-details">
+        <pre>14:36:41.140 request:
+1 &gt; GET https://api.weatherbit.io/v2.0/current?lat=-788.99&amp;lon=-1122.44444&amp;marine=&amp;units=&amp;lang=&amp;key=randomkey
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.weatherbit.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:36:42.137 response time in milliseconds: 997.14
+1 &lt; 403
+1 &lt; Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 10 Jan 2020 03:36:42 GMT
+1 &lt; Server: openresty/1.11.2.2
+1 &lt; Transfer-Encoding: chunked
+{&quot;error&quot;:&quot;API key not valid, or not yet activated.&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">match responseStatus == 403</span>
+  
+  <span class="lead-duration duration">0.002</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

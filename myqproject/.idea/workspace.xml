@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="296e202b-54c7-487c-87d3-2db2fb4d9172" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/BankStatement/BankStatementRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/BankStatement/BankStatementTests.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/BankStatementRequests/PostEnqueCalculateIncomeJob.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/BankStatementRequests/bankstatementLogin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/DecodeToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/Dispatch/SendEmail.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/Dispatch/SendEmail.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/DispatchRequests/dispatch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/DispatchRequests/dispatch2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/EmailAuthApi/EmailVerification.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/EmailAuthApiRequests/emailAuthApiForgetPassword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/EmailAuthApiRequests/emailAuthApiSignIn.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/EmailAuthApiRequests/emailAuthApiSignup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/EmailAuthApiRequests/isEmailVerified.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/IDPAPI/buyerbyemail.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/MobileDeviceRegistry/AddingDevice.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/MobileDeviceRegistryRequests/AccessToken.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/MobileDeviceRegistryRequests/BundllAppToken.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/MobileDeviceRegistryRequests/devices.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/PublishMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/TestPublishMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/Tokenisation/Tokenisation.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/UpdateEmailStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/origination/OriginationParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/origination/checkAppIdClaim.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/origination/checkSysAccClaim.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/origination/feeder.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/origination/origination.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/paymenthub/PaymentHubParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundll/paymenthub/paymenthub.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/acceptTC.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/bankStatementsLogin.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/bsoJob.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/ccLogin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/checkEmailVerified.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/createAccount.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/createRegistration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/createUser.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/enterIdBso.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/enterIdDetails.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/enterMobile.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/enterOTP.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/enterTitleDob.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/login.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/makePaymentFunding.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/makePaymentSystem.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/retrieveCase.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/updateSystemAccount.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/bundllrequests/verifyEmail.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcase/homeloan/CloudCaseParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcase/homeloan/loanApplication.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/cloudcaserequests/req9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/createMobileNumber.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/createUUID.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/BankAccount/getBankAccounts.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/BankAccount/getBankAccountsParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Barcode/GetPremiumBarcode/getPremiumBarcode.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Barcode/GetPremiumBarcode/getPremiumBarcodeParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Barcode/GetWalletBarcode/getWalletBarcode.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Barcode/GetWalletBarcode/getWalletBarcodeParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/AddCard/addCard.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/AddCard/addCardParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/DeleteCard/deleteCard.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/DeleteCard/deleteCardParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/GetCards/getCards.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/GetCards/getCardsParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/GetDefaultCard/getDefaultCard.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/GetDefaultCard/getDefaultCardParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/SetDefaultCard/setDefaultCard.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/SetDefaultCard/setDefaultCardParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/UpdateCard/updateCard.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/CreditCard/UpdateCard/updateCardParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Financials/getSummary.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Financials/getSummaryParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/HummParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Legal/GetAgreements/getAgreements.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Legal/GetAgreements/getAgreementsParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Legal/SetAgreements/setAgreements.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Legal/SetAgreements/setAgreementsParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Logout/logout.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Logout/logoutParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/PingBuyerServer/hello.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/PingBuyerServer/helloParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/ChangePassword/changePassword.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/ChangePassword/changePasswordParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/GetConsumerDetails/getConsumerDetails.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/GetConsumerDetails/getConsumerDetailsParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/SetAddress/setAddress.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/SetAddress/setAddressParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/SetDefaultPaymentFrequency/setDefaultPaymentFrequency.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Profile/SetDefaultPaymentFrequency/setDefaultPaymentFrequencyParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Purchase/GetPurchase/GetPurchaseParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/Purchase/GetPurchase/getPurchase.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/login/LoginParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/login/login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/registration/RegistrationParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/humm/registration/registration.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummchristmas/HummChristmasParallelRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummchristmas/hummchristmas.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummrequests/addCard.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummrequests/changePassword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummrequests/login.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummrequests/setAddress.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummrequests/setAgreements.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/hummrequests/updateCard.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/karate-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/karate-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/login.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/pause.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/performance/BundllLoad.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/performance/BundllLoadLogin.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/performance/ChristmasLoad.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/performance/CloudCaseLoad.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/performance/CustomFeeder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/performance/HummLoad.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/polling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flexigroup%20API%20Automation/src/test/java/randomNumber.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Flexigroup%20API%20Automation" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1W9LGazvXBY7hHLoXg5Zhocu2o7" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="http.certificates" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="SendEmailParallelRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flexigroupapiautomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Dispatch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Dispatch" />
+      <option name="MAIN_CLASS_NAME" value="Dispatch.SendEmailParallelRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SendEmailParallelRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="296e202b-54c7-487c-87d3-2db2fb4d9172" name="Default Changelist" comment="" />
+      <created>1578556768486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578556768486</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,85 @@
+16:21:12.425 karate.env = null 
+16:21:12.428 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+16:21:12.430 config.apiKey = f767c102bb874909878729858a9ca968 
+16:21:13.308 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=AI-2640&country=&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+16:21:14.489 response time in milliseconds: 1179.28
+1 < 204
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Date: Fri, 10 Jan 2020 05:21:14 GMT
+1 < Server: openresty/1.11.2.2
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=AI-2640&country=&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: MISS
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 714
+1 < X-RateLimit-Reset: 1578700481
+
+16:21:14.495 assertion failed: path: $, actual: 204, expected: 200, reason: not equal (Integer)
+16:21:14.518 karate.env = null 
+16:21:14.519 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+16:21:14.519 config.apiKey = f767c102bb874909878729858a9ca968 
+16:21:14.540 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=110001&country=&marine=&units=I&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+16:21:15.546 response time in milliseconds: 1004.65
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 05:21:15 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=110001&country=&marine=&units=I&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 708
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":93,"pod":"d","lon":77.2183,"pres":991.6,"timezone":"Asia\/Kolkata","ob_time":"2020-01-10 04:30","country_code":"IN","clouds":0,"ts":1578630600,"solar_rad":529.7,"state_code":"07","city_name":"New Delhi","wind_spd":5.8,"last_ob_time":"2020-01-10T04:30:00","wind_cdir_full":"west-northwest","wind_cdir":"WNW","slp":1020,"vis":3.1,"h_angle":-30,"sunset":"12:12","dni":826.78,"dewpt":44.3,"snow":0,"uv":1.81265,"precip":0,"wind_dir":290,"sunrise":"01:45","ghi":529.7,"dhi":99.54,"aqi":500,"lat":28.6369,"weather":{"icon":"c01d","code":"800","description":"Clear sky"},"datetime":"2020-01-10:05","temp":46.4,"station":"VIDP","elev_angle":31.89,"app_temp":46.3}],"count":1}
+
+
+.37,"timezone":"America\/Godthab","ob_time":"2020-01-10 03:27","country_code":"SJ","clouds":14,"ts":1578626826,"solar_rad":0,"state_code":"21","city_name":"Ny-Ålesund","wind_spd":3.24943,"last_ob_time":"2020-01-10T03:07:00","wind_cdir_full":"Nordwestlich","slp":1023.29,"vis":24.1344,"lon":-0.9,"uv":0,"datetime":"2020-01-10:03","h_angle":null,"dewpt":-28.9,"aqi":null,"dhi":0,"wind_dir":320,"elev_angle":-30.1,"ghi":0,"precip":null,"sunrise":"00:00","lat":100.11,"weather":{"icon":"c01n","code":"800","description":"Klarer Himmel"},"sunset":"99:99","temp":-25.4,"dni":0,"station":"F0582","app_temp":-36.7}],"count":1}
+
+
+14:48:37.707 karate.env = null 
+14:48:37.707 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:48:37.708 config.apiKey = f767c102bb874909878729858a9ca968 
+14:48:37.722 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=562.36969&lon=789.3695&marine=test&units=a&lang=oi&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:48:38.726 response time in milliseconds: 1003.78
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 03:48:38 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=562.36969&lon=789.3695&marine=test&units=a&lang=oi&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 753
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"wind_cdir":"NW","rh":93,"pod":"n","pres":1023.37,"timezone":"Asia\/Anadyr","ob_time":"2020-01-10 03:26","country_code":"RU","clouds":14,"ts":1578626767,"solar_rad":0,"state_code":"15","city_name":"Leningradskiy","wind_spd":3.25333,"last_ob_time":"2020-01-10T03:00:00","wind_cdir_full":"northwest","slp":1023.29,"vis":24.1344,"lon":789.37,"uv":0,"datetime":"2020-01-10:03","h_angle":0,"dewpt":-28.9,"aqi":null,"dhi":0,"wind_dir":321,"elev_angle":-6.01,"ghi":0,"precip":null,"sunrise":"22:22","lat":562.37,"weather":{"icon":"c01n","code":"800","description":"Clear sky"},"sunset":"07:55","temp":-25.4,"dni":0,"station":"E1141","app_temp":-36.7}],"count":1}
+
+
+14:48:38.727 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)

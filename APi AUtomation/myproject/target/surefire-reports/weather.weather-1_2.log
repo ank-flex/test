@@ -1,0 +1,30 @@
+12:59:03.227 karate.env = null 
+12:59:03.230 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:03.230 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:04.059 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=40.9006&lon=174.8860&marine=t&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:05.219 response time in milliseconds: 1159.14
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:05 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=40.9006&lon=174.8860&marine=t&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 909
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":75,"pod":"d","lon":174.89,"pres":994.162,"timezone":"America\/Adak","ob_time":"2020-01-10 01:52","country_code":"US","clouds":100,"ts":1578621149,"solar_rad":81.915,"state_code":"AK","city_name":"Attu Station","wind_spd":15.8921,"last_ob_time":"2020-01-10T01:28:00","wind_cdir_full":"west","wind_cdir":"W","slp":994.195,"vis":24.1351,"h_angle":0,"sunset":"06:32","dni":708.32,"dewpt":3.8,"snow":0,"uv":0.799883,"precip":0,"wind_dir":276,"sunrise":"19:29","ghi":327.66,"dhi":81.91,"aqi":31,"lat":40.9,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2020-01-10:01","temp":8,"station":"PWAK","elev_angle":21.92,"app_temp":8}],"count":1}
+
+
+12:57:00.122 assertion failed: path: $, actual: {data=[{"rh":75,"pod":"d","lon":174.89,"pres":994.162,"timezone":"America\/Adak","ob_time":"2020-01-10 01:52","country_code":"US","clouds":100,"ts":1578621149,"solar_rad":81.915,"state_code":"AK","city_name":"Attu Station","wind_spd":15.8921,"last_ob_time":"2020-01-10T01:28:00","wind_cdir_full":"west","wind_cdir":"W","slp":994.195,"vis":24.1351,"h_angle":0,"sunset":"06:32","dni":708.32,"dewpt":3.8,"snow":0,"uv":0.799883,"precip":0,"wind_dir":276,"sunrise":"19:29","ghi":327.66,"dhi":81.91,"aqi":31,"lat":40.9,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2020-01-10:01","temp":8,"station":"PWAK","elev_angle":21.92,"app_temp":8}], count=1}, expected: {count=1, data=#notnull, data[0].pod=["d","|| 'n'"]}, reason: all key-values did not match, expected has un-matched keys: [data[0].pod]

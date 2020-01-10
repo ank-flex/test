@@ -1,0 +1,25 @@
+12:59:06.284 karate.env = null 
+12:59:06.284 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+12:59:06.285 config.apiKey = f767c102bb874909878729858a9ca968 
+12:59:06.293 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=-788.99&lon=-1122.44444&marine=&units=&lang=&key=randomkey
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: application/x-www-form-urlencoded; charset=utf-8
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+12:59:07.306 response time in milliseconds: 1011.82
+1 < 403
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 01:59:07 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+{"error":"API key not valid, or not yet activated."}
+
+
+12:59:07.318 abort at feature: classpath:weather/weather.feature, scenario: Find weather data based on provided values, line: 14

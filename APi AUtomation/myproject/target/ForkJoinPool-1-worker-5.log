@@ -1,0 +1,88 @@
+16:21:12.425 karate.env = null 
+16:21:12.428 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+16:21:12.430 config.apiKey = f767c102bb874909878729858a9ca968 
+16:21:13.307 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=15119-43943&country=&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+16:21:14.491 response time in milliseconds: 1180.21
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 05:21:14 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=15119-43943&country=&marine=&units=&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: MISS
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 715
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":36,"pod":"n","lon":-79.8522,"pres":984.6,"timezone":"America\/New_York","ob_time":"2020-01-10 05:04","country_code":"US","clouds":100,"ts":1578632640,"solar_rad":0,"state_code":"PA","city_name":"Duquesne","wind_spd":1.34,"last_ob_time":"2020-01-10T05:04:00","wind_cdir_full":"south","wind_cdir":"S","slp":1025.2,"vis":5,"h_angle":-90,"sunset":"22:12","dni":0,"dewpt":-8.3,"snow":0,"uv":0,"precip":0,"wind_dir":184,"sunrise":"12:41","ghi":0,"dhi":0,"aqi":46,"lat":40.3704,"weather":{"icon":"c04n","code":"804","description":"Overcast clouds"},"datetime":"2020-01-10:05","temp":5.6,"station":"E8454","elev_angle":-70.82,"app_temp":4.8}],"count":1}
+
+
+16:21:14.505 karate.env = null 
+16:21:14.506 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+16:21:14.506 config.apiKey = f767c102bb874909878729858a9ca968 
+16:21:14.522 request:
+1 > GET https://api.weatherbit.io/v2.0/current?postal_code=D02+A272&country=&marine=t&units=S&lang=&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+16:21:15.536 response time in milliseconds: 1013.26
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 05:21:15 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?postal_code=D02+A272&country=&marine=t&units=S&lang=&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 710
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":83,"pod":"n","lon":-6.2543,"pres":1015.5,"timezone":"Europe\/Dublin","ob_time":"2020-01-10 04:31","country_code":"IE","clouds":39,"ts":1578630660,"solar_rad":0,"state_code":"L","city_name":"Dublin","wind_spd":0.89,"last_ob_time":"2020-01-10T04:31:00","wind_cdir_full":"south","wind_cdir":"S","slp":1021.4,"vis":5,"h_angle":-90,"sunset":"16:28","dni":0,"dewpt":273.8,"snow":0,"uv":0,"precip":0,"wind_dir":184,"sunrise":"08:36","ghi":0,"dhi":0,"aqi":48,"lat":53.34,"weather":{"icon":"c02n","code":"801","description":"Few clouds"},"datetime":"2020-01-10:05","temp":276.5,"station":"F4142","elev_angle":-31.18,"app_temp":276.3}],"count":1}
+
+
+-9.8,"dni":778.09,"station":"NFTF","app_temp":-29.2}],"count":1}
+
+
+14:48:37.688 karate.env = null 
+14:48:37.689 config.baseUrl = https://api.weatherbit.io/v2.0/current 
+14:48:37.689 config.apiKey = f767c102bb874909878729858a9ca968 
+14:48:37.706 request:
+1 > GET https://api.weatherbit.io/v2.0/current?lat=55.66&lon=99.00&marine=&units=q&lang=test&key=f767c102bb874909878729858a9ca968
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.weatherbit.io
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_40)
+
+14:48:38.726 response time in milliseconds: 1019.52
+1 < 200
+1 < Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Access-Control-Allow-Methods: GET, OPTIONS, POST
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 10 Jan 2020 03:48:38 GMT
+1 < Server: openresty/1.11.2.2
+1 < Transfer-Encoding: chunked
+1 < X-Cache-Key: api.weatherbit.io/v2.0/current?lat=55.66&lon=99.00&marine=&units=q&lang=test&key=f767c102bb874909878729858a9ca968
+1 < X-Proxy-Cache: HIT
+1 < X-RateLimit-Limit: 1000
+1 < X-RateLimit-Remaining: 752
+1 < X-RateLimit-Reset: 1578700481
+{"data":[{"rh":95,"pod":"d","lon":99,"pres":984.519,"timezone":"Asia\/Irkutsk","ob_time":"2020-01-10 03:26","country_code":"RU","clouds":83,"ts":1578626767,"solar_rad":64.6567,"state_code":"20","city_name":"Alzamay","wind_spd":0.705242,"last_ob_time":"2020-01-10T03:00:00","wind_cdir_full":"west","wind_cdir":"W","slp":1035.51,"vis":17.0124,"h_angle":-67.5,"sunset":"09:37","dni":481.03,"dewpt":-15.3,"snow":0,"uv":0.884153,"precip":0,"wind_dir":275,"sunrise":"02:16","ghi":123.78,"dhi":53.03,"aqi":6,"lat":55.66,"weather":{"icon":"c04d","code":"804","description":"Overcast clouds"},"datetime":"2020-01-10:03","temp":-13.7,"station":"UNKL","elev_angle":5.62,"app_temp":-22}],"count":1}
+
+
+14:48:38.727 assertion failed: path: $, actual: 200, expected: 400, reason: not equal (Integer)

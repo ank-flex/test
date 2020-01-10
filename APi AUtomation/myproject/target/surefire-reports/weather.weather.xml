@@ -1,0 +1,886 @@
+<testsuite failures="3" name="weather/weather.feature" skipped="0" tests="15" time="23.246163">
+  <testcase classname="weather.weather" name="Find weather data based on provided values - only lat &amp; long is provided" time="2.610216">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - -ve lat &amp; long provided(automatic round-off)" time="2.610505">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - Optional marine param provided" time="2.610654">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - Optional marine,units(M) param provided" time="2.610411">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - Optional marine,units(s)" time="2.610766">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - Optional units(I)" time="1.038809">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - Optional marine,units(I), language" time="1.016242">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="Find weather data based on provided values - Optional units(M), language(de)" time="1.027872">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - incorrect lat &amp; long" time="1.029777">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - Lat not provided" time="1.021819">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - long not provided" time="1.008453">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'455', lon:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - Incorrect marine value" time="1.013656">
+    <failure message="weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)">* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'455', lon:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'122.899', lon:'123.555', marine: 'ys', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)</failure>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - Incorrect units value" time="1.009947">
+    <failure message="weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)">* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'455', lon:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'122.899', lon:'123.555', marine: 'ys', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)&#13;
+
+* configure ssl = true .................................................... passed
+* def query = {lat:'55.66', lon:'99.00', marine: '', units:'q', lang: 'test',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)</failure>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - incorrect marine,units, language" time="1.013586">
+    <failure message="weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)">* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'455', lon:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'122.899', lon:'123.555', marine: 'ys', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)&#13;
+
+* configure ssl = true .................................................... passed
+* def query = {lat:'55.66', lon:'99.00', marine: '', units:'q', lang: 'test',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)&#13;
+
+* configure ssl = true .................................................... passed
+* def query = {lat:'562.36969', lon:'789.3695', marine: 'test', units:'a', lang: 'oi',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)</failure>
+  </testcase>
+  <testcase classname="weather.weather" name="API should return 400/403 based on incorrect values - incorrect api key" time="1.01345">
+    <system-out>* configure ssl = true .................................................... passed
+* def query = {lat:'33.8688', lon:'151.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-.099', lon:'-.2093', marine: 'null', units:'null', lang: 'null',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'40.9006', lon:'174.8860', marine: 't', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'855', lon:'-123', marine: 't', units:'M', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'988.09888', lon:'2334.55567', marine: 't', units:'S', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'675.511', lon:'1234.55', marine: '', units:'I', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.444444', marine: 't', units:'I', lang: 'ar',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'100.11', lon:'-0.899', marine: '', units:'M', lang: 'de',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 200 .......................................... passed
+And match response == {count: 1, data: '#notnull'} ........................ passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'latitude', lon:'longtitude', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'', lon:'144.88888', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'455', lon:'', marine: '', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... passed
+* configure ssl = true .................................................... passed
+* def query = {lat:'122.899', lon:'123.555', marine: 'ys', units:'', lang: '',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)&#13;
+
+* configure ssl = true .................................................... passed
+* def query = {lat:'55.66', lon:'99.00', marine: '', units:'q', lang: 'test',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)&#13;
+
+* configure ssl = true .................................................... passed
+* def query = {lat:'562.36969', lon:'789.3695', marine: 'test', units:'a', lang: 'oi',key: '#(apiKey)'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 400 .......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: weather.feature:32 - path: $, actual: 200, expected: 400, reason: not equal (Integer)&#13;
+	at ✽.Then match responseStatus == 400 (weather.feature:32)&#13;
+
+* configure ssl = true .................................................... passed
+* def query = {lat:'-788.99', lon:'-1122.44444', marine: '', units:'', lang: '',key: 'randomkey'} . passed
+Given url baseUrl ......................................................... passed
+And params query .......................................................... passed
+When method get ........................................................... passed
+Then match responseStatus == 403 .......................................... passed</system-out>
+  </testcase>
+</testsuite>
